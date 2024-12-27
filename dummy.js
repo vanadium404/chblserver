@@ -5,7 +5,8 @@ const cors = require('cors');
 const stripe = require('stripe')('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');
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
+
 
 const WEB_SERVICES = 'http://www.400hitter.com/ws/DataService.asmx?WSDL';
 const ACCESS_KEY = '35b7746fba83414a89664c4daa93780b';
